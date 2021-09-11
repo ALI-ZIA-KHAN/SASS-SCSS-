@@ -1,0 +1,50 @@
+/* scss - css3
+sass-css */
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: #10ac84;
+}
+
+.main_header h1 {
+  color: orange;
+  letter-spacing: 1rem;
+  text-transform: "uppercase";
+  font-size: 6rem;
+}
+
+.main_header h1:hover {
+  color: aliceblue;
+}
+
+.main_header p {
+  color: orange;
+  letter-spacing: 0.5rem;
+  text-transform: "capatalize";
+  font-size: 5rem;
+}
+
+.main_header p:hover {
+  color: aliceblue;
+}
+/*# sourceMappingURL=main.css.map */

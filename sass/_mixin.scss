@@ -1,0 +1,12 @@
+@mixin commoncode($paramfordifflettspac,$para2){
+    color:orange;
+    letter-spacing: $paramfordifflettspac;
+    text-transform: $para2;
+}
+
+@mixin flexprob{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

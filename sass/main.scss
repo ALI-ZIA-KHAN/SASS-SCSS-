@@ -1,0 +1,69 @@
+/* scss is actually css3
+sass is actually css */
+
+// sass is one of the most popular preprocessor
+// first we created index.html,then in by creating sass folder we created main.scss
+// then we installed live server extension, then just by clkng watch sass below
+// two files are auto created main.css and main.css.map
+// we just write in main.scss, map file autom compiles and put into main.css
+// we connect main.css with index.html and rest is autom done use live server so not hv to refresh everytime
+
+
+@import "mixin";
+@import "var";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+.main_header{
+
+    @include flexprob;
+    
+    width:100vw;
+    height: 100vh;
+    background:$bg-color ;
+
+    
+
+
+
+    h1{
+        @include commoncode(1rem,"uppercase");
+        font-size: 3rem+3rem;
+
+     &:hover{
+          color: aliceblue  
+        }
+    }
+
+
+    
+    p{
+        @include commoncode(0.5rem,"capatalize");
+        font-size: 3rem+2rem;
+
+        &:hover{
+            color: aliceblue;
+        }
+    
+    }
+
+
+}
+
+//1-)   use of operator + -
+//2-) use of variables $bg-color now u can use anywhere
+//3-) nesting  like h1 and p inside of main_header can be targeted see compilation is like main_header h1{}, with &
+//u can also use pseudo elements with it
+//-4)mixin,  add your block of css to any variable with &mixin obce then place it &include anywhere
+//-5)parameters like aboove u want diff letter spacing tho common property,in multiple order is imp
+//-6)Partials hvng css didyributed on many pages
+//partial files start with _ to tell compiler that leave files with _ just compile main.css
